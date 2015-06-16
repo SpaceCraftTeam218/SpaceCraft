@@ -1,5 +1,6 @@
 package com.SpaceCraftTeam.SpaceCraft.block;
 
+import com.SpaceCraftTeam.SpaceCraft.creativetab.CreativeTab;
 import com.SpaceCraftTeam.SpaceCraft.reference.Textures;
 import com.SpaceCraftTeam.SpaceCraft.tileenity.TileEntitySpaceCraft;
 import cpw.mods.fml.relauncher.Side;
@@ -29,7 +30,10 @@ public class BlockSpaceCraft extends Block {
     public BlockSpaceCraft(Material material)
     {
         super(material);
+        this.setCreativeTab(CreativeTab.SpaceCraftTab);
     }
+
+
 
     @Override
     public String getUnlocalizedName()
