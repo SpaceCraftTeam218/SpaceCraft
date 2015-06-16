@@ -4,9 +4,9 @@ public class Names {
 
     public static final class Blocks
     {
+        public static final String LAUNCHPAD = "BlockLaunchPad"
 
-
-
+;
     }
 
     public static final class TileEntities

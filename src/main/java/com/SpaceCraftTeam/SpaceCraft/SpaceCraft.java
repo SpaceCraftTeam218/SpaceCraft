@@ -6,6 +6,7 @@ import com.SpaceCraftTeam.SpaceCraft.init.Recipes;
 import com.SpaceCraftTeam.SpaceCraft.init.TileEntities;
 import com.SpaceCraftTeam.SpaceCraft.network.PacketHandler;
 import com.SpaceCraftTeam.SpaceCraft.proxy.IProxy;
+import com.SpaceCraftTeam.SpaceCraft.reference.GUIs;
 import com.SpaceCraftTeam.SpaceCraft.reference.Reference;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
@@ -15,6 +16,8 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
 public class SpaceCraft {
+
+    public static final int guiIDLaunchPad = 0;
 
     @Mod.Instance(Reference.MOD_ID)
     public static SpaceCraft Instance;
