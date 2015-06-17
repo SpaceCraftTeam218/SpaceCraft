@@ -1,5 +1,7 @@
 package com.SpaceCraftTeam.SpaceCraft;
 
+import com.SpaceCraftTeam.SpaceCraft.creativetab.CreativeTab;
+import com.SpaceCraftTeam.SpaceCraft.handler.SpaceCraftGuiHandler;
 import com.SpaceCraftTeam.SpaceCraft.init.ModBlocks;
 import com.SpaceCraftTeam.SpaceCraft.init.ModItems;
 import com.SpaceCraftTeam.SpaceCraft.init.Recipes;
@@ -13,6 +15,7 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.network.NetworkRegistry;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
 public class SpaceCraft {
@@ -29,6 +32,7 @@ public class SpaceCraft {
     public void preInit(FMLPreInitializationEvent event)
     {
 
+
         PacketHandler.init();
 
         ModItems.init();
@@ -42,6 +46,8 @@ public class SpaceCraft {
     @Mod.EventHandler
     public void init(FMLInitializationEvent event)
     {
+
+        NetworkRegistry.INSTANCE.registerGuiHandler(this, new SpaceCraftGuiHandler());
 
         TileEntities.init();
 

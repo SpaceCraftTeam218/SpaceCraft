@@ -82,7 +82,7 @@ public class TileEntityRendererLaunchPad extends TileEntitySpecialRenderer {
         if(tileentity.getWorldObj().getBlockMetadata(tileentity.xCoord, tileentity.yCoord, tileentity.zCoord) == 8){
             GL11.glRotated(90.0,0,1,0);
             GL11.glRotated(180,0,1,0);
-            GL11.glTranslated(0,0,-0.5);
+            GL11.glTranslated(0,pixel*-4,-0.5);
             this.bindTexture(Textures.Model.LAUNCHPAD8META);
             model8Meta.render();
         }
