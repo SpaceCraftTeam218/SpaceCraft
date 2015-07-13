@@ -7,6 +7,8 @@ public class Models {
 
     public static final String MODEL_LOCATION = "models/";
 
+    public static final ResourceLocation MODELWINDMILLBASEMETA0 = ResourceLocationHelper.getResourceLocation(MODEL_LOCATION + "WindmillBaseMeta0.obj");
+
     public static final ResourceLocation MODELLAUNCHPAD0META = ResourceLocationHelper.getResourceLocation(MODEL_LOCATION + "LaunchPad0Meta.obj");
     public static final ResourceLocation MODELLAUNCHPAD1META = ResourceLocationHelper.getResourceLocation(MODEL_LOCATION + "LaunchPad1Meta.obj");
     public static final ResourceLocation MODELLAUNCHPAD2META = ResourceLocationHelper.getResourceLocation(MODEL_LOCATION + "LaunchPad2Meta.obj");

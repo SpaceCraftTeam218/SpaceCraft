@@ -3,6 +3,7 @@ package com.SpaceCraftTeam.SpaceCraft.reference;
 
 public enum GUIs {
 
-    LAUNCHPAD
+    LAUNCHPAD,
+    WINDMILL
 
 }

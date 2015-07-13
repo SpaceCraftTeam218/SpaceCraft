@@ -1,7 +1,10 @@
 package com.SpaceCraftTeam.SpaceCraft.block;
 
 import com.SpaceCraftTeam.SpaceCraft.SpaceCraft;
+import com.SpaceCraftTeam.SpaceCraft.creativetab.CreativeTab;
 import com.SpaceCraftTeam.SpaceCraft.init.ModBlocks;
+import com.SpaceCraftTeam.SpaceCraft.reference.GUIs;
+import com.SpaceCraftTeam.SpaceCraft.reference.Names;
 import com.SpaceCraftTeam.SpaceCraft.tileenity.TileEntityLaunchPad;
 import cpw.mods.fml.common.network.internal.FMLNetworkHandler;
 import net.minecraft.block.Block;
@@ -17,7 +20,8 @@ public class BlockLaunchPad extends BlockContainer {
 
     public BlockLaunchPad() {
         super(Material.rock);
-        this.setBlockName("BlockLaunchPad");
+        this.setBlockName(Names.Blocks.LAUNCHPAD);
+        this.setCreativeTab(CreativeTab.SpaceCraftTab);
     }
 
     private static float pixel = 1F / 16F;
@@ -54,8 +58,8 @@ public class BlockLaunchPad extends BlockContainer {
 
     public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int side, float hitX, float hitY, float hitZ){
         if(!world.isRemote){
-            FMLNetworkHandler.openGui(player, SpaceCraft.Instance, SpaceCraft.guiIDLaunchPad, world, x, y, z);
-            System.out.println("GUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII");
+            FMLNetworkHandler.openGui(player, SpaceCraft.Instance, GUIs.LAUNCHPAD.ordinal(), world, x, y, z);
+            System.out.println("GUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII  ::  " + world.getBlockMetadata(x,y,z));
         }
 
         return true;
@@ -119,7 +123,6 @@ public class BlockLaunchPad extends BlockContainer {
     public boolean isMutiBlockStructure(World world, int x1, int y1, int z1){
         boolean mStructure = false;
         boolean currentCheckStructure = true;
-        int meta = world.getBlockMetadata(x1,y1,z1);
 
 
         for(int x2 = 0; x2 < 3; x2++){
@@ -152,11 +155,7 @@ public class BlockLaunchPad extends BlockContainer {
         }
         if(mStructure) return true;
 
-
-
-       if(world.getBlockMetadata(x1, y1, z1) > 0) world.setBlockMetadataWithNotify(x1, y1, z1, 0, 3);
-
-
+        if(world.getBlockMetadata(x1, y1, z1) > 0) world.setBlockMetadataWithNotify(x1, y1, z1, 0, 3);
 
         return false;
     }

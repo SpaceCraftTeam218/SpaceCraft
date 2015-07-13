@@ -1,0 +1,11 @@
+itemGroup.spacecraftTab=Space Craft
+
+tile.BlockLaunchPad.name=Launch Pad
+tile.BlockCopperWire.name=Copper Wire
+tile.BlockTinWire.name=Tin Wire
+tile.BlockBasicCrusher.name=Basic Crusher
+tile.BlockClassicCrusher.name=Classic Crusher
+tile.BlockAdvancedCrusher.name=Advanced Crusher
+tile.BlockBasicFurnace.name=Basic Furnace
+tile.BlockClassicFurnace.name=Classic Furnace
+tile.BlockAdvancedFurnace.name=Advanced Furnace

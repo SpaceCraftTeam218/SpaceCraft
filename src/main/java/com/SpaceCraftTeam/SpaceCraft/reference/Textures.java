@@ -7,6 +7,7 @@ public class Textures {
 
     public static final String RESOURCE_PREFIX = Reference.LOWERCASE_MOD_ID + ":";
 
+
     public static final class Armor
     {
 
@@ -15,6 +16,14 @@ public class Textures {
     public static final class Model
     {
         private static final String MODEL_TEXTURE_LOCATION = "textures/models/";
+
+        public static final ResourceLocation COPPERWIRE = ResourceLocationHelper.getResourceLocation(MODEL_TEXTURE_LOCATION + "CopperWire.png");
+
+        public static final ResourceLocation Windmill = ResourceLocationHelper.getResourceLocation(MODEL_TEXTURE_LOCATION + "windmill.png");
+        public static final ResourceLocation WindmillBlock = ResourceLocationHelper.getResourceLocation(MODEL_TEXTURE_LOCATION + "windmillBlock.png");
+
+        public static final ResourceLocation WindmillBaseMeta0 = ResourceLocationHelper.getResourceLocation(MODEL_TEXTURE_LOCATION + "WindmillBaseMeta0.png");
+
         public static final ResourceLocation LAUNCHPAD0META = ResourceLocationHelper.getResourceLocation(MODEL_TEXTURE_LOCATION + "ModelLaunchPad0Meta.png");
         public static final ResourceLocation LAUNCHPAD1META = ResourceLocationHelper.getResourceLocation(MODEL_TEXTURE_LOCATION + "ModelLaunchPad1Meta.png");
         public static final ResourceLocation LAUNCHPAD2META = ResourceLocationHelper.getResourceLocation(MODEL_TEXTURE_LOCATION + "ModelLaunchPad2Meta.png");
@@ -25,6 +34,7 @@ public class Textures {
         public static final ResourceLocation LAUNCHPAD7META = ResourceLocationHelper.getResourceLocation(MODEL_TEXTURE_LOCATION + "ModelLaunchPad7Meta.png");
         public static final ResourceLocation LAUNCHPAD8META = ResourceLocationHelper.getResourceLocation(MODEL_TEXTURE_LOCATION + "ModelLaunchPad8Meta.png");
         public static final ResourceLocation LAUNCHPAD9META = ResourceLocationHelper.getResourceLocation(MODEL_TEXTURE_LOCATION + "ModelLaunchPad9Meta.png");
+
     }
 
     public static final class Gui
