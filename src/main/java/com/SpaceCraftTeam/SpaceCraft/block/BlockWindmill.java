@@ -5,7 +5,7 @@ import com.SpaceCraftTeam.SpaceCraft.creativetab.CreativeTab;
 import com.SpaceCraftTeam.SpaceCraft.init.ModBlocks;
 import com.SpaceCraftTeam.SpaceCraft.reference.GUIs;
 import com.SpaceCraftTeam.SpaceCraft.reference.Names;
-import com.jacat.WindmillMod.block.tileentity.TileEntityWindmill;
+import com.SpaceCraftTeam.SpaceCraft.tileenity.TileEntityWindmill;
 import cpw.mods.fml.common.network.internal.FMLNetworkHandler;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
@@ -21,7 +21,6 @@ public class BlockWindmill extends BlockContainer {
     public BlockWindmill() {
         super(Material.iron);
         this.setBlockName(Names.Blocks.WINDMILL);
-        this.setCreativeTab(CreativeTab.SpaceCraftTab);
     }
 
     @Override

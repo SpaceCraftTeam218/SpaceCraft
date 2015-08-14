@@ -2,7 +2,7 @@ package com.SpaceCraftTeam.SpaceCraft.renderer.tileentity;
 
 import com.SpaceCraftTeam.SpaceCraft.init.ModBlocks;
 import com.SpaceCraftTeam.SpaceCraft.reference.Textures;
-import com.jacat.WindmillMod.block.tileentity.TileEntityWindmill;
+import com.SpaceCraftTeam.SpaceCraft.tileenity.TileEntityWindmill;
 import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.tileentity.TileEntity;

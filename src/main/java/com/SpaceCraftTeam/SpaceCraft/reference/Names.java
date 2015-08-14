@@ -54,7 +54,9 @@ public class Names {
 
     public static final class Weapons
     {
-
+        public static final String SMALLBOMB = "itemSmallBomb";
+        public static final String MEDIUMBOMB = "itemMediumBomb";
+        public static final String LARGEBOMB = "itemLargeBomb";
 
 
     }
@@ -62,7 +64,10 @@ public class Names {
     public static final class Armor
     {
 
-
+        public static final String TINHELMET = "itemTinHelmet";
+        public static final String TINPLATE = "itemTinPlate";
+        public static final String TINPANTS = "itemTinPants";
+        public static final String TINBOOTS = "itemTinBoots";
 
     }
 

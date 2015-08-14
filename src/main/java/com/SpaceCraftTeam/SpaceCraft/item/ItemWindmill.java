@@ -10,7 +10,9 @@ import net.minecraft.world.World;
 public class ItemWindmill extends Item {
 
     public ItemWindmill(){
-        this.setUnlocalizedName("ItemWindmill").setCreativeTab(CreativeTab.SpaceCraftTab).setTextureName("diamond");
+        this.setUnlocalizedName("ItemWindmill");
+        this.setCreativeTab(CreativeTab.SpaceCraftTab);
+        this.setTextureName("diamond");
     }
 
     public boolean onItemUse(ItemStack itemstack, EntityPlayer player, World world, int x, int y, int z, int side, float x2, float y2, float z2){

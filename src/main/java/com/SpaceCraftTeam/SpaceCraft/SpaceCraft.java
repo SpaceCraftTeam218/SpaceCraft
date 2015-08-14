@@ -1,5 +1,7 @@
 package com.SpaceCraftTeam.SpaceCraft;
 
+import com.SpaceCraftTeam.SpaceCraft.entity.SpaceCraftEntity;
+import com.SpaceCraftTeam.SpaceCraft.handler.CraftingHandler;
 import com.SpaceCraftTeam.SpaceCraft.handler.SpaceCraftGuiHandler;
 import com.SpaceCraftTeam.SpaceCraft.init.ModBlocks;
 import com.SpaceCraftTeam.SpaceCraft.init.ModItems;
@@ -30,8 +32,11 @@ public class SpaceCraft {
     public void preInit(FMLPreInitializationEvent event)
     {
 
+        CraftingHandler.init();
 
         PacketHandler.init();
+
+        SpaceCraftEntity.mainRegistry();
 
         ModItems.init();
 

@@ -1,4 +1,4 @@
-package com.jacat.WindmillMod.block.tileentity;
+package com.SpaceCraftTeam.SpaceCraft.tileenity;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.ISidedInventory;

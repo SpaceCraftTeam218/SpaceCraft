@@ -4,6 +4,7 @@ package com.SpaceCraftTeam.SpaceCraft.reference;
 public enum GUIs {
 
     LAUNCHPAD,
-    WINDMILL
+    WINDMILL,
+    BasicCrusher
 
 }

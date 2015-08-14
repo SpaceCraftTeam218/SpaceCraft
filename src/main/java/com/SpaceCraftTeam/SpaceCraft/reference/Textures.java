@@ -8,6 +8,18 @@ public class Textures {
     public static final String RESOURCE_PREFIX = Reference.LOWERCASE_MOD_ID + ":";
 
 
+    public static final class Items{
+        private static final String ITEM_TEXTURE_LOCATION = "textures/items/";
+
+        public static final String TinHelmet = (ITEM_TEXTURE_LOCATION + "TinHelmet.png");
+        public static final String TinPlate = (ITEM_TEXTURE_LOCATION + "TinPlate.png");
+        public static final String TinPants = (ITEM_TEXTURE_LOCATION + "TinPants.png");
+        public static final String TinBoots = (ITEM_TEXTURE_LOCATION + "TinBoots.png");
+
+
+
+    }
+
     public static final class Armor
     {
 
@@ -42,6 +54,9 @@ public class Textures {
 
         protected static final String GUI_TEXTURE_LOCATION = "textures/gui/";
         public static final ResourceLocation LAUNCHPAD = ResourceLocationHelper.getResourceLocation(GUI_TEXTURE_LOCATION + "LaunchPadGui.png");
+
+        public static final ResourceLocation BASICCRUSHER = ResourceLocationHelper.getResourceLocation(GUI_TEXTURE_LOCATION + "BasicCrusherGui.png");
+
 
     }
 

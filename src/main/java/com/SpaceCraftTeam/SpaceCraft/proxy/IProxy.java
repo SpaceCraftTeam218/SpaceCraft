@@ -1,5 +1,7 @@
 package com.SpaceCraftTeam.SpaceCraft.proxy;
 
+import cpw.mods.fml.client.registry.RenderingRegistry;
+
 public interface IProxy {
 
     public abstract ClientProxy getClientProxy();
@@ -14,4 +16,5 @@ public interface IProxy {
 
     public abstract void spawnParticle(String particleName, double xCoord, double yCoord, double zCoord, double xVelocity, double yVelocity, double zVelocity);
 
+    public abstract int addArmor(String armor);
 }
